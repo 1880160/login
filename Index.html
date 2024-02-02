@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+    <form>
+        <label for="fname">Username:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <button id="login" onclick=session()>login</button>
+    </form>
+    
+
+</body> 
+<script>
+
+        function session(){
+            let rpd = document.getElementById("fname").value;
+            let mdp = document.getElementById("password").value;
+            localStorage.setItem("username,", rpd );
+            localStorage.setItem("pass", mpd );
+
+
+        }
+    </script>
+</html>
